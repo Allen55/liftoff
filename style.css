@@ -12,6 +12,49 @@ body {
   font-family: Helvetica, Arial, sans-serif;
 }
 
+header {
+  display: flex;
+  position: fixed;
+  justify-content: space-between;
+  z-index: 2;
+  width: 100%;
+  align-items: center;
+  border-radius: 0px 0px 1.5rem 1.5rem;
+}
+
+.logo {
+  flex-grow: 0;
+  margin-left: 20px;
+}
+nav {
+  margin-left: auto;
+  display: flex;
+  margin-right: 5rem;
+}
+
+.nav-item {
+  margin-left: 20px;
+}
+
+.nav-item a {
+  color: white;
+  text-decoration: none;
+  margin-right: 5rem;
+}
+
+#carousel-text {
+  position: absolute;
+  top: 35rem;
+  left: 45rem;
+  color: white;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  margin-right: 1rem;
+}
+
 p {
   color: #252525;
   line-height: 1.5em;
@@ -60,9 +103,83 @@ section h2:after {
 
 /* Header defaults */
 header {
-  background-color: rgba(37, 37, 37, 0.8);
+  background-color: rgba(37, 37, 37, 0.5);
+  border-radius: 20px;
 }
 
 /* 
  * YOUR CSS:
  */
+.thisworks {
+  display: flex;
+  justify-content: space-between;
+}
+
+.staff-items{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.staff-profile{
+  text-align: center;
+  flex: 0 0 33%;
+  box-sizing: border-box;
+}
+
+
+@media only screen and (max-width: 600px) {
+
+  .thisworks {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .thisworks p {
+    font-size: 10px;
+  }
+
+  #aboutmockup {
+    display: none
+  }
+  
+
+  nav {
+    margin-left: auto;
+    display: flex;
+    margin-right: 5rem;
+  }
+  
+  .nav-item {
+    margin-left: 20px;
+  }
+  
+  .nav-item a {
+    color: white;
+    text-decoration: none;
+    margin-right: 5rem;
+  }
+
+
+  .thisworks {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .staff-items{
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .staff-profile{
+    text-align: center;
+    flex: 0 0 50%;
+    box-sizing: border-box;
+  }  
+  .staff-profile h3 {
+    font-size: 15px;
+  }
+
+  .staff-profile p {
+    font-size: 9px;
+  }
+}
